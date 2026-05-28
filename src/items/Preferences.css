@@ -1,0 +1,86 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("preferences-img.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.box {
+ 
+  padding: 30px;
+  border-radius: 12px;
+  width: 360px;
+  border: 2px solid #EAD7C5;
+}
+.heading{
+  text-align: center;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #EAD7C5;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #B35C1E;
+}
+
+/* Step text */
+.step {
+  text-align: center;
+  color: #C97A40;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  color: #A94E1A;
+}
+
+/* Options grid */
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.option-btn {
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #EAD7C5;
+  background: #F8F1EB;
+  color: #B35C1E;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #C97A40;
+  color: #F8F1EB;
+}
+
+.option-btn.active {
+  background: #B35C1E;
+  color: #F8F1EB;
+  border-color: #B35C1E;
+}

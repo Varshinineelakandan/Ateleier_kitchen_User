@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src ={logo} className='logo'/>
+      <h1>ATELIER <span className='heading'>KITCHEN</span></h1><br/>
+      <p className='typing'>A CREATIVE STUDIO WHERE FOOD IS CRAFTED LIKE ART</p>
+      <button className='btn-app' onClick={()=>navigate('/TableSelect')}> EXPLORE </button>
     </div>
   );
 }

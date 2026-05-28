@@ -1,0 +1,145 @@
+.payment-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-image: url("bg-payment.png");
+  background-size:auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-family: "DM Sans", sans-serif;
+}
+
+.payment-card {
+  width: 420px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px var(--shadow);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.payment-card:hover {
+  box-shadow: 0 20px 50px var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.payment-card h2 {
+  font-size: 24px;
+  color: var(--spice);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Amount Box */
+.amount-box {
+  background: linear-gradient(135deg, var(--cream), var(--sand));
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  border: 1px solid var(--sand);
+}
+
+.amount-box p {
+  font-size: 14px;
+  color: var(--text-mid);
+}
+
+.amount-box h1 {
+  font-size: 34px;
+  margin: 5px 0 0;
+  color: var(--rust);
+}
+
+/* Button */
+.placeorder-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  background: var(--spice);
+  color: var(--card-bg);
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.placeorder-btn:hover {
+  background: var(--amber);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px var(--shadow-hover);
+}
+
+/* Status */
+.status {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text-mid);
+}
+
+.success {
+  color: var(--rust);
+  font-weight: 600;
+}
+
+/* Delivery Box */
+.delivery-box {
+  margin-top: 18px;
+  padding: 14px;
+  background: var(--cream);
+  border-left: 4px solid var(--spice);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--text-dark);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.choice-box button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--spice);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.choice-box button:hover {
+  background: var(--amber);
+  transform: scale(1.03);
+}
+
+.qr-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.qr-section img {
+  width: 180px;
+  height: 180px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid var(--sand);
+}
