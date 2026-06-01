@@ -6,7 +6,7 @@ function App() {
   const navigate = useNavigate();
   return (
     <div className="App">
-      <img src ={logo} className='logo'/>
+      <img src ={logo} className='logo' alt='Logo'/>
       <h1>ATELIER <span className='heading'>KITCHEN</span></h1><br/>
       <p className='typing'>A CREATIVE STUDIO WHERE FOOD IS CRAFTED LIKE ART</p>
       <button className='btn-app' onClick={()=>navigate('/TableSelect')}> EXPLORE </button>

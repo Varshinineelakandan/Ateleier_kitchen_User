@@ -78,7 +78,7 @@ function Cart() {
       {cart.length > 0 && (
         <div className="cart-right">
           <div className="header">
-            <img src={logo} className='logo-design' />
+            <img src={logo} className='logo-design' alt='Logo'/>
             <h1 className="firstname">ATELIER <span className='heading'>KITCHEN</span></h1>
 
           </div>
